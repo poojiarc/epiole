@@ -24,9 +24,14 @@ const Footer = () => {
                 alt="Epiole Transdermic Logo"
                 className="h-12 w-auto brightness-0 invert"
               />
-              <span className="font-serif text-xl font-semibold">
-                EPIOLE TRANSDERMIC
-              </span>
+              <div className="flex flex-col">
+                <span className="brand-name brand-name-main text-xl text-primary-foreground leading-tight">
+                  EPIOLE
+                </span>
+                <span className="brand-name brand-name-sub text-[0.65rem] text-primary-foreground/70 leading-tight">
+                  TRANSDERMIC
+                </span>
+              </div>
             </Link>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-md text-justified">
               Premium derma-pharmaceutical solutions backed by science. We combine cutting-edge 
