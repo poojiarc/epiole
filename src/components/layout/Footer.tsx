@@ -28,7 +28,7 @@ const Footer = () => {
               <img
                 src={logo}
                 alt="Epiole Transdermic Logo"
-                className="h-12 w-auto brightness-0 invert"
+                className="h-12 w-auto object-contain"
               />
               <div className="flex flex-col">
                 <span className="brand-name brand-name-main text-xl text-primary-foreground leading-tight">

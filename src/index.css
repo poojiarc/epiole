@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
+
+/* Your other styles below */
+@layer base {
+  body {
+    font-family: 'Lato', sans-serif;
+  }
+}
+
 
 /* EPIOLE TRANSDERMIC - Premium Derma-Pharma Design System
    Clinical luxury aesthetic with black, white, and soft nude/sage tones
