@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Check, Beaker, Sparkles } from "lucide-react";
+import { ArrowLeft, Check, Beaker, Sparkles, Lightbulb } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { products } from "@/data/products";
 
@@ -83,10 +83,23 @@ const ProductDetail = () => {
                 {product.description}
               </p>
 
+              {/* Features and Benefits */}
+              {product.featuresAndBenefits && (
+                <div className="mb-8">
+                  <h3 className="font-serif text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
+                    <Lightbulb className="w-5 h-5 text-bronze" />
+                    Features & Benefits
+                  </h3>
+                  <div className="text-muted-foreground leading-relaxed text-justified whitespace-pre-line">
+                    {product.featuresAndBenefits}
+                  </div>
+                </div>
+              )}
+
               {/* Key Benefits */}
               <div className="mb-8">
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4 flex items-center gap-2">
-                  <Sparkles className="w-5 h-5 text-sage-dark" />
+                  <Sparkles className="w-5 h-5 text-bronze" />
                   Key Benefits
                 </h3>
                 <ul className="space-y-3">
@@ -98,8 +111,8 @@ const ProductDetail = () => {
                       transition={{ duration: 0.3, delay: 0.2 + index * 0.05 }}
                       className="flex items-start gap-3"
                     >
-                      <span className="w-5 h-5 rounded-full bg-accent flex-shrink-0 flex items-center justify-center mt-0.5">
-                        <Check className="w-3 h-3 text-accent-foreground" />
+                      <span className="w-5 h-5 rounded-full bg-bronze/20 flex-shrink-0 flex items-center justify-center mt-0.5">
+                        <Check className="w-3 h-3 text-bronze" />
                       </span>
                       <span className="text-muted-foreground">{benefit}</span>
                     </motion.li>
@@ -112,7 +125,7 @@ const ProductDetail = () => {
       </section>
 
       {/* Key Ingredients Section */}
-      <section className="section-padding bg-sage-gradient">
+      <section className="section-padding bg-clinical-gradient">
         <div className="container-wide">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -123,7 +136,7 @@ const ProductDetail = () => {
           >
             <div className="text-center mb-10">
               <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-3 flex items-center justify-center gap-3">
-                <Beaker className="w-6 h-6 text-sage-dark" />
+                <Beaker className="w-6 h-6 text-bronze" />
                 Key Ingredients
               </h2>
               <p className="text-muted-foreground">
@@ -131,7 +144,7 @@ const ProductDetail = () => {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-5">
               {product.keyIngredients.map((ingredient, index) => (
                 <motion.div
                   key={ingredient.name}
@@ -139,9 +152,9 @@ const ProductDetail = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="bg-background rounded-xl p-6 border border-border"
+                  className="bg-background rounded-xl p-5 border border-border shadow-sm hover:shadow-md transition-shadow"
                 >
-                  <h4 className="font-serif text-lg font-semibold text-foreground mb-2">
+                  <h4 className="font-serif text-base font-semibold text-foreground mb-2">
                     {ingredient.name}
                   </h4>
                   <p className="text-sm text-muted-foreground leading-relaxed text-justified">
