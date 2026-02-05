@@ -29,11 +29,11 @@ const Header = () => {
               alt="Epiole Transdermic Logo"
               className="h-10 md:h-12 w-auto"
             />
-            <div className="hidden sm:flex flex-col">
-              <span className="brand-name brand-name-main text-lg md:text-xl text-foreground leading-tight">
+            <div className="flex flex-col leading-none">
+              <span className="brand-name brand-name-main text-sm sm:text-lg md:text-xl text-foreground leading-tight">
                 EPIOLE
               </span>
-              <span className="brand-name brand-name-sub text-[0.6rem] md:text-[0.65rem] text-muted-foreground leading-tight">
+              <span className="brand-name brand-name-sub text-[9px] sm:text-[0.6rem] md:text-[0.65rem] text-muted-foreground tracking-wides">
                 TRANSDERMIC
               </span>
             </div>
