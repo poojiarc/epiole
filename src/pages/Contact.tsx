@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, MessageCircle, Building2, Globe } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { companyInfo } from "@/data/products";
 
@@ -65,7 +65,8 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8 flex items-center gap-3">
+                <Phone className="w-7 h-7 text-bronze" />
                 Contact Information
               </h2>
 
@@ -75,7 +76,7 @@ const Contact = () => {
                   const content = item.href ? (
                     <a
                       href={item.href}
-                      className="text-foreground hover:text-sage-dark transition-colors"
+                      className="text-foreground hover:text-bronze transition-colors"
                     >
                       {item.content}
                     </a>
@@ -91,11 +92,12 @@ const Contact = () => {
                       transition={{ duration: 0.4, delay: 0.1 + index * 0.1 }}
                       className="flex items-start gap-4"
                     >
-                      <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                        <Icon className="w-6 h-6 text-accent-foreground" />
+                      <div className="w-12 h-12 rounded-full bg-bronze/10 flex items-center justify-center flex-shrink-0">
+                        <Icon className="w-6 h-6 text-bronze" />
                       </div>
                       <div>
-                        <h3 className="font-medium text-muted-foreground text-sm mb-1">
+                        <h3 className="font-medium text-bronze text-sm mb-1 flex items-center gap-2">
+                          <Icon className="w-4 h-4" />
                           {item.title}
                         </h3>
                         <p className="text-lg">{content}</p>
@@ -113,11 +115,12 @@ const Contact = () => {
                 className="mt-8"
               >
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-6 h-6 text-accent-foreground" />
+                  <div className="w-12 h-12 rounded-full bg-bronze/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-6 h-6 text-bronze" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-muted-foreground text-sm mb-1">
+                    <h3 className="font-medium text-bronze text-sm mb-1 flex items-center gap-2">
+                      <Building2 className="w-4 h-4" />
                       Address
                     </h3>
                     <p className="text-lg text-foreground">
@@ -140,7 +143,8 @@ const Contact = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8">
+              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-8 flex items-center gap-3">
+                <Globe className="w-7 h-7 text-bronze" />
                 Follow Us On
               </h2>
 
@@ -154,9 +158,9 @@ const Contact = () => {
                       href={social.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-3 px-5 py-3 bg-muted rounded-lg hover:bg-accent transition-colors group"
+                      className="flex items-center gap-3 px-5 py-3 bg-bronze/10 rounded-lg hover:bg-bronze/20 transition-colors group"
                     >
-                      <Icon className="w-5 h-5 text-muted-foreground group-hover:text-accent-foreground" />
+                      <Icon className="w-5 h-5 text-bronze" />
                       <span className="font-medium text-foreground">{social.name}</span>
                     </a>
                   );
@@ -164,7 +168,7 @@ const Contact = () => {
               </div>
 
               {/* WhatsApp CTA */}
-              <div className="bg-sage-gradient rounded-2xl p-8">
+              <div className="bg-gradient-to-br from-bronze/10 to-sage-light rounded-2xl p-8 border border-bronze/20">
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
                   Chat with Us on WhatsApp
                 </h3>
@@ -175,7 +179,7 @@ const Contact = () => {
                   href={companyInfo.whatsappLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-3 px-6 py-3 bg-green-600 text-white font-medium rounded-lg hover:bg-green-700 transition-colors"
+                  className="inline-flex items-center gap-3 px-6 py-3 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition-colors"
                 >
                   <MessageCircle className="w-5 h-5" />
                   Chat on WhatsApp
@@ -183,7 +187,7 @@ const Contact = () => {
               </div>
 
               {/* Company Info Box */}
-              <div className="mt-8 bg-muted/50 rounded-xl p-6 border border-border">
+              <div className="mt-8 bg-bronze/5 rounded-xl p-6 border border-bronze/20">
                 <h4 className="font-serif text-lg font-semibold text-foreground mb-2">
                   {companyInfo.name}
                 </h4>

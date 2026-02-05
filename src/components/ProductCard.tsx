@@ -31,12 +31,12 @@ const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
         {/* Content */}
         <div className="p-5 md:p-6">
           {/* Category Badge */}
-          <span className="inline-block text-xs font-medium uppercase tracking-wider text-muted-foreground mb-2">
+        <span className="inline-block text-xs font-medium uppercase tracking-wider text-bronze mb-2">
             {product.category}
           </span>
 
           {/* Product Name */}
-          <h3 className="font-serif text-lg md:text-xl font-semibold text-foreground mb-2 group-hover:text-sage-dark transition-colors">
+        <h3 className="font-serif text-lg md:text-xl font-semibold text-foreground mb-2 group-hover:text-bronze transition-colors">
             {product.name}
           </h3>
 
@@ -46,7 +46,7 @@ const ProductCard = ({ product, index = 0 }: ProductCardProps) => {
           </p>
 
           {/* Learn More Link */}
-          <span className="inline-flex items-center gap-2 text-sm font-medium text-foreground mt-4 group-hover:gap-3 transition-all">
+        <span className="inline-flex items-center gap-2 text-sm font-medium text-bronze mt-4 group-hover:gap-3 transition-all">
             Learn More
             <svg
               className="w-4 h-4"

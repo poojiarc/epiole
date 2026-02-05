@@ -49,11 +49,11 @@ const Header = () => {
                   to={item.path}
                   className={`nav-link-underline flex items-center gap-2 px-4 py-2 text-sm font-medium transition-colors ${
                     isActive(item.path)
-                      ? "text-foreground"
+                      ? "text-bronze"
                       : "text-muted-foreground hover:text-foreground"
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className={`w-4 h-4 ${isActive(item.path) ? "text-bronze" : ""}`} />
                   {item.name}
                 </Link>
               );
@@ -91,11 +91,11 @@ const Header = () => {
                     onClick={() => setIsMenuOpen(false)}
                     className={`flex items-center gap-3 px-4 py-3 rounded-lg text-base font-medium transition-colors ${
                       isActive(item.path)
-                        ? "bg-muted text-foreground"
+                        ? "bg-bronze/10 text-bronze"
                         : "text-muted-foreground hover:bg-muted hover:text-foreground"
                     }`}
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className={`w-5 h-5 ${isActive(item.path) ? "text-bronze" : ""}`} />
                     {item.name}
                   </Link>
                 );

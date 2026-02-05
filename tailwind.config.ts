@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Cormorant Garamond", "serif"],
-        sans: ["Montserrat", "sans-serif"],
+        serif: ["Playfair Display", "Georgia", "serif"],
+        sans: ["Lato", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -69,6 +69,10 @@ export default {
         },
         cream: "hsl(var(--cream))",
         clinical: "hsl(var(--clinical-white))",
+        bronze: {
+          DEFAULT: "hsl(var(--bronze))",
+          light: "hsl(var(--bronze-light))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
