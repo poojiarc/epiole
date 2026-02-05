@@ -6,65 +6,67 @@
    Clinical luxury aesthetic with black, white, and soft nude/sage tones
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
     /* Core brand colors */
-    --background: 0 0% 100%;
-    --foreground: 0 0% 8%;
+    --background: 30 20% 98%;
+    --foreground: 25 15% 12%;
 
     /* Soft clinical cream/nude for cards */
-    --card: 30 20% 98%;
-    --card-foreground: 0 0% 8%;
+    --card: 30 25% 99%;
+    --card-foreground: 25 15% 12%;
 
     /* Popover uses same as card */
-    --popover: 30 20% 98%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 30 25% 99%;
+    --popover-foreground: 25 15% 12%;
 
     /* Primary: Pure black for luxury feel */
-    --primary: 0 0% 8%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 25 15% 12%;
+    --primary-foreground: 30 20% 98%;
 
-    /* Secondary: Soft sage green (from products) */
-    --secondary: 75 15% 92%;
-    --secondary-foreground: 75 25% 25%;
+    /* Secondary: Warm cream */
+    --secondary: 30 25% 92%;
+    --secondary-foreground: 25 20% 20%;
 
     /* Muted: Warm gray for subtle elements */
-    --muted: 30 10% 94%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 30 15% 94%;
+    --muted-foreground: 25 10% 45%;
 
-    /* Accent: Soft sage/green (product packaging color) */
-    --accent: 120 15% 88%;
-    --accent-foreground: 120 20% 20%;
+    /* Accent: Warm beige/nude */
+    --accent: 30 30% 88%;
+    --accent-foreground: 25 20% 18%;
 
     /* Destructive for errors */
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders and inputs */
-    --border: 30 10% 90%;
-    --input: 30 10% 90%;
-    --ring: 0 0% 8%;
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 25 15% 12%;
 
     --radius: 0.5rem;
 
     /* Custom brand tokens */
-    --nude: 30 25% 94%;
-    --sage: 120 12% 85%;
-    --sage-dark: 120 15% 35%;
-    --cream: 40 30% 97%;
-    --clinical-white: 0 0% 99%;
+    --nude: 30 30% 94%;
+    --sage: 25 20% 85%;
+    --sage-dark: 25 30% 38%;
+    --cream: 35 35% 97%;
+    --clinical-white: 30 15% 99%;
+    --bronze: 25 45% 35%;
+    --bronze-light: 25 40% 50%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(30 25% 96%) 0%, hsl(0 0% 100%) 50%, hsl(120 12% 95%) 100%);
-    --gradient-sage: linear-gradient(180deg, hsl(120 12% 92%) 0%, hsl(120 12% 88%) 100%);
-    --gradient-clinical: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(30 20% 98%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(30 25% 97%) 0%, hsl(30 20% 98%) 50%, hsl(25 25% 92%) 100%);
+    --gradient-sage: linear-gradient(180deg, hsl(30 25% 94%) 0%, hsl(25 25% 88%) 100%);
+    --gradient-clinical: linear-gradient(180deg, hsl(30 20% 99%) 0%, hsl(30 25% 96%) 100%);
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsla(0, 0%, 0%, 0.08);
-    --shadow-card: 0 8px 30px -8px hsla(0, 0%, 0%, 0.1);
-    --shadow-elevated: 0 20px 50px -15px hsla(0, 0%, 0%, 0.15);
+    --shadow-soft: 0 4px 20px -4px hsla(25, 20%, 20%, 0.08);
+    --shadow-card: 0 8px 30px -8px hsla(25, 20%, 20%, 0.12);
+    --shadow-elevated: 0 20px 50px -15px hsla(25, 20%, 20%, 0.18);
 
     /* Sidebar (keeping defaults) */
     --sidebar-background: 0 0% 98%;
@@ -78,33 +80,36 @@
   }
 
   .dark {
-    --background: 0 0% 5%;
-    --foreground: 0 0% 95%;
+    --background: 25 15% 6%;
+    --foreground: 30 20% 95%;
 
-    --card: 0 0% 8%;
-    --card-foreground: 0 0% 95%;
+    --card: 25 15% 10%;
+    --card-foreground: 30 20% 95%;
 
-    --popover: 0 0% 8%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 25 15% 10%;
+    --popover-foreground: 30 20% 95%;
 
-    --primary: 0 0% 95%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 30 20% 95%;
+    --primary-foreground: 25 15% 10%;
 
-    --secondary: 120 10% 15%;
-    --secondary-foreground: 120 10% 90%;
+    --secondary: 25 15% 15%;
+    --secondary-foreground: 30 20% 90%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 25 12% 15%;
+    --muted-foreground: 30 15% 60%;
 
-    --accent: 120 10% 18%;
-    --accent-foreground: 120 10% 90%;
+    --accent: 25 15% 18%;
+    --accent-foreground: 30 20% 90%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 95%;
 
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 0 0% 80%;
+    --border: 25 12% 20%;
+    --input: 25 12% 20%;
+    --ring: 30 20% 80%;
+
+    --bronze: 25 40% 55%;
+    --bronze-light: 25 35% 65%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -124,29 +129,30 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
   }
 
   /* Brand name styling */
   .brand-name {
-    font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 0.15em;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
   }
 
   .brand-name-main {
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.12em;
   }
 
   .brand-name-sub {
     font-weight: 400;
-    letter-spacing: 0.25em;
-    font-size: 0.5em;
+    letter-spacing: 0.3em;
+    font-size: 0.45em;
   }
 
   /* Justified text for paragraphs */

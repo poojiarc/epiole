@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Home, Info, ShoppingBag, Rocket, Phone, Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
+import { Home, Info, ShoppingBag, Rocket, Phone, Mail, Clock, MapPin, Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 import { companyInfo } from "@/data/products";
 
@@ -11,13 +11,19 @@ const quickLinks = [
   { name: "Contact Us", path: "/contact", icon: Phone },
 ];
 
+const socialLinks = [
+  { icon: Facebook, name: "Facebook", href: companyInfo.social.facebook },
+  { icon: Instagram, name: "Instagram", href: companyInfo.social.instagram },
+  { icon: Linkedin, name: "LinkedIn", href: companyInfo.social.linkedin },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-foreground text-primary-foreground">
       <div className="container-wide section-padding-sm">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-10">
           {/* Brand Column */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 md:col-span-2">
             <Link to="/" className="flex items-center gap-3 mb-4">
               <img
                 src={logo}
@@ -38,51 +44,14 @@ const Footer = () => {
               transdermal technology with clinically proven ingredients to deliver skincare 
               that truly works.
             </p>
-            
-            {/* Social Icons */}
-            <div className="flex items-center gap-4 mt-6">
-              <a
-                href={companyInfo.social.facebook}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook className="w-5 h-5" />
-              </a>
-              <a
-                href={companyInfo.social.instagram}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5" />
-              </a>
-              <a
-                href={companyInfo.social.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-primary-foreground/10 flex items-center justify-center hover:bg-primary-foreground/20 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-5 h-5" />
-              </a>
-              <a
-                href={companyInfo.whatsappLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-green-600 flex items-center justify-center hover:bg-green-700 transition-colors"
-                aria-label="WhatsApp"
-              >
-                <MessageCircle className="w-5 h-5" />
-              </a>
-            </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="font-serif text-lg font-semibold mb-4 flex items-center gap-2">
+              <ShoppingBag className="w-4 h-4 text-bronze-light" />
+              Quick Links
+            </h4>
             <nav className="space-y-2">
               {quickLinks.map((link) => {
                 const Icon = link.icon;
@@ -102,20 +71,70 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-serif text-lg font-semibold mb-4">Contact</h4>
+            <h4 className="font-serif text-lg font-semibold mb-4 flex items-center gap-2">
+              <Phone className="w-4 h-4 text-bronze-light" />
+              Contact
+            </h4>
             <div className="space-y-3 text-sm text-primary-foreground/70">
               <p>
-                <span className="block text-primary-foreground font-medium">Phone</span>
+                <span className="flex items-center gap-2 text-primary-foreground font-medium mb-1">
+                  <Phone className="w-3.5 h-3.5" />
+                  Phone
+                </span>
                 {companyInfo.phone}
               </p>
               <p>
-                <span className="block text-primary-foreground font-medium">Email</span>
+                <span className="flex items-center gap-2 text-primary-foreground font-medium mb-1">
+                  <Mail className="w-3.5 h-3.5" />
+                  Email
+                </span>
                 {companyInfo.email}
               </p>
               <p>
-                <span className="block text-primary-foreground font-medium">Hours</span>
+                <span className="flex items-center gap-2 text-primary-foreground font-medium mb-1">
+                  <Clock className="w-3.5 h-3.5" />
+                  Hours
+                </span>
                 {companyInfo.businessHours}
               </p>
+            </div>
+          </div>
+
+          {/* Follow Us On */}
+          <div>
+            <h4 className="font-serif text-lg font-semibold mb-4 flex items-center gap-2">
+              <MessageCircle className="w-4 h-4 text-bronze-light" />
+              Follow Us On
+            </h4>
+            <div className="space-y-3">
+              {socialLinks.map((social) => {
+                const Icon = social.icon;
+                return (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors group"
+                  >
+                    <div className="w-8 h-8 rounded-full bg-primary-foreground/10 flex items-center justify-center group-hover:bg-primary-foreground/20 transition-colors">
+                      <Icon className="w-4 h-4" />
+                    </div>
+                    {social.name}
+                  </a>
+                );
+              })}
+              <a
+                href={companyInfo.whatsappLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors group"
+              >
+                <div className="w-8 h-8 rounded-full bg-emerald-600 flex items-center justify-center group-hover:bg-emerald-700 transition-colors">
+                  <MessageCircle className="w-4 h-4" />
+                </div>
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
