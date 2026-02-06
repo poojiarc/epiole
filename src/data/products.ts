@@ -304,7 +304,6 @@ export const companyInfo = {
   whatsappLink: "https://wa.me/message/DD6TU5UXU4CYH1",
   social: {
   instagram: "https://www.instagram.com/epioletransdermic?igsh=MTlneXA5YzFyOWEydQ==",
-  linkedin: "https://www.linkedin.com/in/sayad-basha-0b4836364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
   facebook: "https://www.facebook.com/share/1AEZimfwqx/"
 }
 

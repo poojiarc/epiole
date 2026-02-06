@@ -186,7 +186,6 @@ const quickLinks = [
 const socialLinks = [
   { icon: Facebook, name: "Facebook", href: companyInfo.social.facebook },
   { icon: Instagram, name: "Instagram", href: companyInfo.social.instagram },
-  { icon: Linkedin, name: "LinkedIn", href: companyInfo.social.linkedin },
 ];
 
 const Footer = () => {
