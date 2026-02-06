@@ -4,7 +4,7 @@ import { Eye, Target, Check, Phone, Mail, Clock, MessageCircle, Microscope, Shie
 import Layout from "@/components/layout/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { brandContent, companyInfo } from "@/data/products";
-import logo from "@/assets/logo.jpg";
+import heroBanner from "@/assets/hero-banner.jpg";
 import epioleVowsImg from "@/assets/epiole-vows.jpg";
 
 const Index = () => {
@@ -45,7 +45,22 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero Section - Clean, clinical, no model image */}
+      {/* Hero Banner */}
+      <section className="overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7 }}
+        >
+          <img
+            src={heroBanner}
+            alt="Epiole Transdermic Product Range"
+            className="w-full h-auto object-cover"
+          />
+        </motion.div>
+      </section>
+
+      {/* Hero Text Section */}
       <section className="bg-hero-gradient section-padding overflow-hidden relative">
         <div className="absolute inset-0 bg-pattern-dots opacity-40" />
         <div className="container-wide relative z-10">
@@ -55,14 +70,6 @@ const Index = () => {
             transition={{ duration: 0.7 }}
             className="max-w-4xl mx-auto text-center"
           >
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5 }}
-              className="mb-8"
-            >
-              <img src={logo} alt="Epiole Transdermic Logo" className="h-20 md:h-24 w-auto mx-auto" />
-            </motion.div>
             <span className="inline-block text-sm font-medium uppercase tracking-widest text-muted-foreground mb-4">
               Premium Derma-Pharmaceutical Solutions
             </span>
