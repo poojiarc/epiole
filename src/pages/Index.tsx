@@ -4,7 +4,7 @@ import { Eye, Target, Check, Phone, Mail, Clock, MessageCircle, Microscope, Shie
 import Layout from "@/components/layout/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { brandContent, companyInfo } from "@/data/products";
-import heroBanner from "@/assets/hero-banner.jpg";
+
 import epioleVowsImg from "@/assets/epiole-vows.jpg";
 
 const Index = () => {
@@ -45,20 +45,6 @@ const Index = () => {
 
   return (
     <Layout>
-      {/* Hero Banner */}
-      <section className="overflow-hidden">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.7 }}
-        >
-          <img
-            src={heroBanner}
-            alt="Epiole Transdermic Product Range"
-            className="w-full h-auto object-cover"
-          />
-        </motion.div>
-      </section>
 
       {/* Hero Text Section */}
       <section className="bg-hero-gradient section-padding overflow-hidden relative">
