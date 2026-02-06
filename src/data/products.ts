@@ -1,6 +1,7 @@
 // Product data for EPIOLE TRANSDERMIC
 
 import accuzenImg from "@/assets/products/accuzen.jpg";
+import dewnixImg from "@/assets/products/dewnix.png";
 import clarinexGlowImg from "@/assets/products/clarinex-glow.jpg";
 import clarinexTxImg from "@/assets/products/clarinex-tx.jpg";
 import clarinexForteImg from "@/assets/products/clarinex-forte.jpg";
@@ -55,6 +56,33 @@ export const products: Product[] = [
       { name: "Sodium PCA & Glycerin", description: "Naturally occurring moisturizing factors that attract and retain moisture, ensuring effective cleansing without stripping the skin." }
     ],
     fullIngredients: "Aqua, Cocamidopropyl Betaine, Sodium Lauroyl Sarcosinate, Glycerin, Hydroxyethyl Urea, Coco-Glucoside, Decyl Glucoside, Sodium PCA, Triethanolamine, PEG-150, Hydrogenated Castor Oil, Propanediol, Zinc PCA, Niacinamide, Phenoxyethanol (and) Ethylhexylglycerin (Euxyl K 120), Mandelic Acid, Panthenol, Glycyrrhiza Glabra (Licorice) Root Extract, Salicylic Acid, Disodium EDTA, Alpha-Arbutin, Menthol, Fragrance."
+  },
+  {
+    id: "dewnix",
+    name: "Dewnix\u2122",
+    tagline: "Gentle Daily Glow Face Wash",
+    shortDescription: "A clinically formulated daily-use hydrating cleanser for long-lasting hydration, clarity, and natural radiance.",
+    description: "A clinically formulated daily-use hydrating cleanser designed to gently purify the skin while supporting long-lasting hydration, improved clarity, and natural radiance. This soap-free, low-foam formula effectively removes dirt, excess oil, and impurities without disrupting the skin's protective barrier. Enriched with a dermatologically balanced complex of Polyglutamic Acid, Azelaic Acid, Fruit AHA Blend, Vitamin E, and Betaine, Dewnix\u2122 helps maintain moisture levels, refine texture, and promote a smoother, brighter-looking complexion. Skin feels soft, refreshed, balanced, and visibly healthy after every wash.",
+    featuresAndBenefits: "This advanced daily cleanser is designed for individuals who need effective cleansing without the tightness or dryness associated with harsh face washes.\n\nThe formulation uses ultra-mild surfactants combined with clinically proven hydrating and skin-conditioning actives to support the skin barrier while enhancing brightness and smoothness.\n\nUnlike traditional cleansers that strip essential lipids, Dewnix\u2122 maintains the skin's natural moisture balance, making it ideal for everyday use and even sensitive or dehydrated skin types.\n\nRegular use helps reveal clearer, softer, and naturally glowing skin.",
+    image: dewnixImg,
+    category: "Face Wash",
+    keyBenefits: [
+      "Gently cleanses without stripping moisture",
+      "Maintains long-lasting hydration",
+      "Improves dullness and uneven skin tone",
+      "Supports smoother, softer texture",
+      "Strengthens skin barrier function",
+      "Suitable for daily and sensitive skin use",
+      "Ideal for normal, dry, dull, and combination skin"
+    ],
+    keyIngredients: [
+      { name: "Polyglutamic Acid", description: "A next-generation humectant with superior water-binding capacity. Helps retain long-lasting hydration, improves skin elasticity, and reduces dryness after cleansing." },
+      { name: "Azelaic Acid", description: "Supports improved skin clarity and tone. Helps reduce dullness, calm redness, and promote a more even complexion." },
+      { name: "Fruit AHA Blend", description: "Provides gentle surface exfoliation to remove dead cells, refine texture, and enhance radiance without irritation." },
+      { name: "Vitamin E (Tocopherol)", description: "An antioxidant that protects skin from environmental stress while supporting barrier repair and softness." },
+      { name: "Betaine", description: "A natural osmoprotectant that maintains moisture balance and reduces post-cleansing tightness or irritation." },
+      { name: "Mild Surfactant System", description: "Soap-free, sulfate-free cleansers that effectively remove impurities while preserving barrier integrity." }
+    ]
   },
   {
     id: "clarinex-glow",
