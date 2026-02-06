@@ -27,7 +27,7 @@ const Header = () => {
             <img
               src={logo}
               alt="Epiole Transdermic Logo"
-              className="h-10 md:h-12 w-auto"
+              className="h-14 md:h-16 w-auto"
             />
             <div className="flex flex-col leading-none">
               <span className="brand-name brand-name-main text-sm sm:text-lg md:text-xl text-foreground leading-tight">
