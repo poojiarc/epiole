@@ -22,23 +22,15 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
       <div className="container-wide">
         <div className="flex items-center justify-between h-16 md:h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-3">
-            <img
-              src={logo}
-              alt="Epiole Transdermic Logo"
-              className="h-14 md:h-16 w-auto"
-            />
-            <div className="flex flex-col leading-none">
-              <span className="brand-name brand-name-main text-sm sm:text-lg md:text-xl text-foreground leading-tight">
-                EPIOLE
-              </span>
-              <span className="brand-name brand-name-sub text-[9px] sm:text-[0.6rem] md:text-[0.65rem] text-muted-foreground tracking-wides">
-                TRANSDERMIC
-              </span>
-            </div>
-          </Link>
-
+          <Link to="/" className="flex items-center">
+  <div className="w-45 md:w-56 lg:w-40 flex items-center">
+    <img
+      src={logo}
+      alt="Epiole Transdermic Logo"
+      className="w-full object-contain"
+    />
+  </div>
+</Link>
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => {

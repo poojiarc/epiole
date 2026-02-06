@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, Check, Beaker, Sparkles, Lightbulb } from "lucide-react";
+import { ArrowLeft, Check, Sparkles, Lightbulb } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { products } from "@/data/products";
 
@@ -73,12 +73,15 @@ const ProductDetail = () => {
               <span className="inline-block text-sm font-medium uppercase tracking-widest text-muted-foreground mb-3">
                 {product.category}
               </span>
+
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-semibold text-foreground mb-3">
                 {product.name}
               </h1>
+
               <p className="text-lg text-sage-dark font-medium mb-6">
                 {product.tagline}
               </p>
+
               <p className="text-muted-foreground leading-relaxed text-justified mb-8">
                 {product.description}
               </p>
@@ -114,7 +117,9 @@ const ProductDetail = () => {
                       <span className="w-5 h-5 rounded-full bg-bronze/20 flex-shrink-0 flex items-center justify-center mt-0.5">
                         <Check className="w-3 h-3 text-bronze" />
                       </span>
-                      <span className="text-muted-foreground">{benefit}</span>
+                      <span className="text-muted-foreground">
+                        {benefit}
+                      </span>
                     </motion.li>
                   ))}
                 </ul>
@@ -123,70 +128,6 @@ const ProductDetail = () => {
           </div>
         </div>
       </section>
-
-      {/* Key Ingredients Section */}
-      <section className="section-padding bg-clinical-gradient">
-        <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-            className="max-w-4xl mx-auto"
-          >
-            <div className="text-center mb-10">
-              <h2 className="font-serif text-2xl md:text-3xl font-semibold text-foreground mb-3 flex items-center justify-center gap-3">
-                <Beaker className="w-6 h-6 text-bronze" />
-                Key Ingredients
-              </h2>
-              <p className="text-muted-foreground">
-                Clinically proven actives that power this formulation
-              </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-5">
-              {product.keyIngredients.map((ingredient, index) => (
-                <motion.div
-                  key={ingredient.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="bg-background rounded-xl p-5 border border-border shadow-sm hover:shadow-md transition-shadow"
-                >
-                  <h4 className="font-serif text-base font-semibold text-foreground mb-2">
-                    {ingredient.name}
-                  </h4>
-                  <p className="text-sm text-muted-foreground leading-relaxed text-justified">
-                    {ingredient.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Full Ingredients */}
-      {product.fullIngredients && (
-        <section className="section-padding-sm bg-background">
-          <div className="container-narrow">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              viewport={{ once: true }}
-            >
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
-                Full Ingredient List (INCI)
-              </h3>
-              <p className="text-sm text-muted-foreground leading-relaxed bg-muted/50 rounded-lg p-4 border border-border">
-                {product.fullIngredients}
-              </p>
-            </motion.div>
-          </div>
-        </section>
-      )}
     </Layout>
   );
 };
