@@ -68,33 +68,23 @@ const About = () => {
             className="prose prose-lg max-w-none"
           >
             <p className="text-muted-foreground leading-relaxed text-justified mb-6">
-              EPIOLE TRANSDERMIC, a flagship brand of {companyInfo.parent}, represents the pinnacle of 
-              derma-pharmaceutical innovation. Founded with a vision to transform skincare through 
-              advanced transdermal delivery systems, we have established ourselves as pioneers in 
-              clinical-grade skincare solutions.
+              EPIOLE TRANSDERMIC, the flagship brand of Curetique Life Sciences Private Limited, represents the forefront of derma pharmaceutical innovation, delivering clinically engineered solutions for both skin and hair care.
+Founded with a vision to transform topical therapy through advanced Novel Drug Delivery Systems (NDDS), we bridge the gap between pharmaceuticals and everyday personal care. Our philosophy is simple yet powerful true efficacy is not defined by ingredients alone, but by how effectively they reach the biological layers where they create measurable change.
             </p>
             
             <p className="text-muted-foreground leading-relaxed text-justified mb-6">
-              Our journey began with a simple yet profound realization: effective skincare is not 
-              just about what ingredients you use, but how effectively they reach the skin layers 
-              where they can make a real difference. This insight led us to develop our proprietary 
-              transdermic technology, which ensures optimal penetration and absorption of active 
-              ingredients.
+              This scientific approach led us to develop proprietary delivery platforms that enhance penetration, improve bioavailability, and enable controlled, targeted release of active ingredients within the skin and scalp. By optimizing absorption and stability, our systems ensure superior performance with minimal irritation and consistent therapeutic outcomes
             </p>
 
             <p className="text-muted-foreground leading-relaxed text-justified mb-6">
-              Today, our comprehensive product range addresses a wide spectrum of dermatological 
-              concerns – from acne and pigmentation to hydration and sun protection. Each formulation 
-              is the result of extensive research, rigorous clinical testing, and a deep understanding 
-              of skin science. We collaborate with leading dermatologists and research institutions 
-              to stay at the forefront of skincare innovation.
+              Today, our comprehensive portfolio addresses a wide spectrum of dermatological and trichological concerns including acne, pigmentation, hydration, barrier repair, sun protection, hair fall control, scalp health, and hair density improvement. Each formulation is built on evidence based actives, advanced delivery technologies, and pharmaceutical grade manufacturing standards Developed through extensive research, rigorous testing, and close collaboration with dermatologists and healthcare professionals, our products deliver professional grade efficacy with everyday usability..
             </p>
 
             <p className="text-muted-foreground leading-relaxed text-justified mb-10">
-              At EPIOLE TRANSDERMIC, we believe that everyone deserves access to professional-grade 
-              skincare. Our products are designed to deliver dermatologist-level results at home, 
-              empowering individuals to take control of their skin health. We are committed to 
-              maintaining the highest standards of quality, safety, and efficacy in everything we create.
+              At EPIOLE TRANSDERMIC, we believe that effective care should be accessible, reliable, and rooted in science. We are committed to the highest standards of quality, safety, and clinical performance in everything we create.
+Pharmaceutical integrity. Clinical precision. Visible results.
+We don’t create cosmetics.
+We engineer therapeutic skin and hair solutions.
             </p>
 
             {/* Closing Highlight */}
