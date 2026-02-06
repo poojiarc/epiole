@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, MessageCircle, Building2, Globe } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, MessageCircle, Building2, Globe } from "lucide-react";
 import Layout from "@/components/layout/Layout";
 import { companyInfo } from "@/data/products";
 
@@ -28,7 +28,6 @@ const Contact = () => {
   const socialLinks = [
     { icon: Facebook, name: "Facebook", href: companyInfo.social.facebook },
     { icon: Instagram, name: "Instagram", href: companyInfo.social.instagram },
-    { icon: Linkedin, name: "LinkedIn", href: companyInfo.social.linkedin },
   ];
 
   return (

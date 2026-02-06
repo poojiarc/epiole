@@ -169,7 +169,6 @@ import {
   Clock,
   Facebook,
   Instagram,
-  Linkedin,
   MessageCircle,
 } from "lucide-react";
 import logo from "@/assets/logo.jpg";
