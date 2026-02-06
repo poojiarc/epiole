@@ -30,7 +30,7 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "accuzen",
-    name: "Accuzen™",
+    name: "Accuzen\u2122",
     tagline: "Gentle on Skin – Tough on Acne",
     shortDescription: "Anti-acne oil control face wash with AHA + BHA exfoliants for clear, healthy skin.",
     description: "A clinically advanced anti-acne face wash designed to deliver visible clarity and long-lasting oil control. This multi-action formula deeply cleanses pores, reduces active acne, and helps prevent future breakouts while maintaining the skin's natural balance. Formulated with a powerful blend of dermatologically proven actives including Salicylic Acid (BHA), Mandelic Acid (AHA), Niacinamide, Zinc PCA, and Licorice Extract, Accuzen™ works at multiple levels to purify, calm, and refine acne-prone skin. It gently exfoliates dead skin cells, unclogs pores, controls excess sebum, soothes inflammation, and helps fade post-acne marks leaving the skin fresh, clear, and visibly healthier.",
@@ -58,7 +58,7 @@ export const products: Product[] = [
   },
   {
     id: "clarinex-glow",
-    name: "Clarinex™ Glow",
+    name: "Clarinex\u2122 Glow",
     tagline: "Bright & Clear Complexion Face Wash",
     shortDescription: "Brightening face wash that cleanses deeply while enhancing skin radiance and clarity.",
     description: "A clinically advanced brightening face wash designed to cleanse deeply while enhancing skin radiance and clarity. This multi-action formula helps reduce pigmentation, dark spots, and dullness, leaving the skin visibly brighter, smoother, and more even-toned. Formulated with a powerful blend of skin brightening and botanical actives including Alpha Arbutin, Kojic Acid Dipalmitate, Glutathione, Licorice Extract, Centella Asiatica, Ginseng Extract, and Rice Water, Clarinex™ Glow works at multiple levels to purify, repair, and illuminate the complexion. It gently cleanses impurities, supports melanin regulation, soothes irritation, and boosts natural glow revealing a fresh, luminous, and healthy looking skin.",
@@ -88,7 +88,7 @@ export const products: Product[] = [
   },
   {
     id: "clarinex-tx",
-    name: "Clarinex-TX™",
+    name: "Clarinex\u2122-TX",
     tagline: "Target Pigment – Restores Even Tone",
     shortDescription: "Advanced de-pigmentation cream targeting stubborn pigmentation, dark spots, and uneven skin tone.",
     description: "A clinically advanced depigmentation cream designed to target stubborn pigmentation, dark spots, and uneven skin tone. This multi-action formula works at the source of hyperpigmentation while improving skin clarity and radiance, leaving the skin visibly brighter, smoother, and more even-toned. Formulated with a powerful blend of dermatologically proven brightening and corrective actives including Tranexamic Acid, Kojic Acid Dipalmitate, Alpha Arbutin, L-Glutathione, Niacinamide, Vitamin C (MAP), Mulberry Extract, and Sodium Hyaluronate, Clarinex-TX works at multiple levels to reduce pigmentation, inhibit excess melanin production, and restore natural skin luminosity. It helps fade dark spots, correct uneven tone, soothe inflammation, and provide antioxidant protection, revealing clearer, healthier, and radiant looking skin.",
@@ -119,7 +119,7 @@ export const products: Product[] = [
   },
   {
     id: "clarinex-forte",
-    name: "Clarinex-Forte™",
+    name: "Clarinex\u2122-Forte",
     tagline: "Target Pigmentation – Restore Radiance",
     shortDescription: "Nutraceutical supplement with L-Glutathione and antioxidants for skin clarity.",
     description: "A premium nutraceutical formulated to support skin brightness from within. Featuring Liposomal L-Glutathione, Resveratrol, Melatonin, and a powerful antioxidant & multi-vitamin complex, Clarinex-Forte helps maintain skin clarity and even tone while providing antioxidant protection against environmental stressors.",
@@ -141,7 +141,7 @@ export const products: Product[] = [
   },
   {
     id: "heliozen",
-    name: "Heliozen™",
+    name: "Heliozen\u2122",
     tagline: "Ultimate Sun Protection Companion",
     shortDescription: "Broad spectrum SPF 50+ PA+++ sunscreen with UVA/UVB and blue light protection.",
     description: "A clinically advanced, next-generation sunscreen designed to provide complete photoprotection against UVA, UVB, HEV (Blue Light), Visible Light, and Infrared (IR) radiation. Heliozen™ not only shields the skin from environmental damage but also strengthens the skin barrier and maintains long-lasting hydration. Powered by an innovative blend of Mineral + Hybrid UV filters including Zinc Oxide (Nano), Titanium Dioxide (Micronized), Tinosorb S, and Tinosorb M, along with Iron Oxides for visible light protection, Heliozen™ delivers superior broad-spectrum defense with a lightweight, cosmetically elegant finish. Enriched with Niacinamide, Ceramide, Sodium Hyaluronate, Vitamin E, Shea Butter, and Aloe Vera, it protects, repairs, hydrates, and soothes the skin, making it ideal for daily dermatological use.",
@@ -174,7 +174,7 @@ export const products: Product[] = [
   },
   {
     id: "dewnix-hydra",
-    name: "Dewnix-Hydra™",
+    name: "Dewnix\u2122-Hydra",
     tagline: "Barrier Support Moisturizer – Deep Hydration, Lasting Comfort",
     shortDescription: "Barrier support moisturizer for intense hydration and skin barrier repair.",
     description: "A clinically advanced barrier repair moisturizer designed to provide intense hydration while restoring and strengthening the skin's natural protective barrier. This multi-action formula helps relieve dryness, tightness, and sensitivity, leaving the skin soft, smooth, calm, and comfortably nourished. Formulated with a powerful blend of skin barrier repairing and hydrating actives including Ceramide 3B, Pentavitin, Bio-Peptide, Low Molecular Weight Hyaluronic Acid, Oat Leaf Extract, Panthenol, Shea Butter, and Aloe Vera, Dewnix-Hydra™ works at multiple levels to repair, protect, and deeply moisturize the skin. It replenishes lost moisture, locks in long lasting hydration, soothes irritation, and strengthens the skin barrier, revealing healthier, plumper, and more resilient skin.",
@@ -205,7 +205,7 @@ export const products: Product[] = [
   },
   {
     id: "dewnix-sr",
-    name: "Dewnix-SR™",
+    name: "Dewnix\u2122-SR",
     tagline: "Ultimate Moisturising Serum",
     shortDescription: "Advanced moisturizing serum with multi-molecular hyaluronic acid complex.",
     description: "An advanced moisturizing serum featuring a multi-molecular hyaluronic acid complex combined with Niacinamide 3%, Zinc PCA, Betaine, Beta Glucan, Panthenol, Ceramide Complex 3:1:1, and Ectoin for complete hydration and skin barrier support.",
@@ -230,7 +230,7 @@ export const products: Product[] = [
   },
   {
     id: "dewnix-elixia",
-    name: "Dewnix-Elixia™",
+    name: "Dewnix\u2122-Elixia",
     tagline: "Target Barrier Damage – Restores Skin Integrity",
     shortDescription: "Barrier repair and skin recovery cream with ceramide complex.",
     description: "A specialized barrier repair and skin recovery cream designed to target barrier damage and restore skin integrity. Features a powerful Ceramide Complex, Multi-Molecular HA, Madecassoside, Allantoin, Ectoin, and Betaine to repair and strengthen the skin barrier, provide deep hydration with TEWL control, and calm redness and sensitivity.",
@@ -260,8 +260,8 @@ export const availableProducts = products.filter(p => !p.isUpcoming);
 export const companyInfo = {
   name: "EPIOLE TRANSDERMIC",
   parent: "CURETIQUE LIFE SCIENCES PRIVATE LIMITED",
-  phone: "+91-7396988934",
-  email: "sayadbasha@gmail.com",
+  phone: "+91-9676615828",
+  email: "info@epiole.com",
   address: {
     line1: "Unit No 405–411, Bizness Square",
     line2: "Jubilee Enclave, Madhapur",
@@ -281,6 +281,6 @@ export const companyInfo = {
 };
 
 export const brandContent = {
-  vision: "At EPIOLE TRANSDERMIC, our vision is to revolutionize skincare through cutting-edge transdermal technology that delivers active ingredients precisely where they are needed most. We aspire to set new standards in dermatological science by creating formulations that are clinically effective, dermatologist-trusted, and accessible to everyone. Our goal is to empower individuals to achieve healthy, radiant skin through products that combine advanced research with the finest ingredients. We envision a world where skincare is not just about appearance but about nurturing the skin's health from within, making clinical-grade care a part of everyday life.",
-  mission: "Our mission at EPIOLE TRANSDERMIC is to develop premium, science-backed skincare solutions that address real skin concerns with precision and care. We are committed to leveraging the latest advancements in transdermal delivery systems to ensure optimal absorption and efficacy of our formulations. Every product we create is the result of rigorous research, clinical testing, and a deep understanding of dermatological needs. We strive to build trust with our customers by delivering consistent results, maintaining the highest quality standards, and prioritizing skin safety. Our mission is to be a trusted partner in every individual's journey toward healthier, more confident skin."
+  vision: "At EPIOLE TRANSDERMIC, our vision is to redefine skin and hair care through science-led innovation powered by advanced Novel Drug Delivery Systems (NDDS). We strive to set new benchmarks in derma-pharmaceutical care by engineering formulations that deliver active ingredients precisely and effectively to their biological site of action—where real therapeutic change occurs. Our goal is to move beyond conventional cosmetics and establish clinically validated, dermatologist-trusted solutions that offer predictable, measurable results. By integrating pharmaceutical research, cutting-edge delivery technologies, and evidence-based actives, we aim to make professional-grade skin and hair care both accessible and reliable for everyday use. We envision a future where personal care is guided by science, not trends—where healthy skin and hair are achieved through targeted treatment, barrier restoration, and long-term biological health. To make clinical-grade care a part of daily life, for everyone.",
+  mission: "At EPIOLE TRANSDERMIC, our mission is to develop premium, science-driven skin and hair care solutions that address real dermatological and scalp concerns with clinical precision and therapeutic efficacy. We are committed to advancing formulation science through Novel Drug Delivery Systems (NDDS) that enhance penetration, optimize bioavailability, and ensure controlled, targeted release of active ingredients for superior performance and safety. Every product we create is built on evidence-based actives, rigorous research, stability testing, and dermatologist-led validation. Our focus is simple: deliver measurable results, not cosmetic claims. By maintaining pharmaceutical-grade quality standards, strict safety protocols, and consistent product performance, we strive to earn the trust of healthcare professionals and consumers alike. Our mission is to be a reliable partner in every individual's journey toward healthier skin, stronger hair, and lasting confidence—making clinical-grade care accessible for everyday life."
 };
