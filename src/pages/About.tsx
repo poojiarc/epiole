@@ -2,29 +2,29 @@ import { motion } from "framer-motion";
 import Layout from "@/components/layout/Layout";
 import SectionHeading from "@/components/SectionHeading";
 import { companyInfo } from "@/data/products";
-import { Beaker, Award, Users, Heart } from "lucide-react";
+import { Beaker, Award, Users, Heart, Atom, ShieldCheck, Stethoscope, BarChart3 } from "lucide-react";
 
 const About = () => {
   const values = [
     {
-      icon: Beaker,
-      title: "Science-Driven",
-      description: "Every product is backed by rigorous scientific research and clinical testing."
+      icon: Atom,
+      title: "NDDS Technology",
+      description: "Advanced Novel Drug Delivery Systems for precise, targeted ingredient release."
     },
     {
-      icon: Award,
-      title: "Premium Quality",
-      description: "We use only the finest, dermatologically proven ingredients in our formulations."
+      icon: ShieldCheck,
+      title: "Pharmaceutical Integrity",
+      description: "Every formulation meets pharmaceutical-grade quality, safety, and stability standards."
     },
     {
-      icon: Users,
-      title: "Customer Trust",
-      description: "Building lasting relationships through consistent results and transparency."
+      icon: Stethoscope,
+      title: "Dermatologist Collaboration",
+      description: "Co-developed and validated by leading dermatologists and clinical researchers."
     },
     {
-      icon: Heart,
-      title: "Skin Health First",
-      description: "Our focus is on nurturing skin health, not just surface-level aesthetics."
+      icon: BarChart3,
+      title: "Clinical Performance",
+      description: "Evidence-based actives delivering measurable, predictable therapeutic results."
     }
   ];
 
@@ -90,12 +90,25 @@ const About = () => {
               to stay at the forefront of skincare innovation.
             </p>
 
-            <p className="text-muted-foreground leading-relaxed text-justified">
+            <p className="text-muted-foreground leading-relaxed text-justified mb-10">
               At EPIOLE TRANSDERMIC, we believe that everyone deserves access to professional-grade 
               skincare. Our products are designed to deliver dermatologist-level results at home, 
               empowering individuals to take control of their skin health. We are committed to 
               maintaining the highest standards of quality, safety, and efficacy in everything we create.
             </p>
+
+            {/* Closing Highlight */}
+            <div className="border-l-4 border-bronze pl-6 py-2">
+              <p className="font-serif text-lg md:text-xl font-semibold text-foreground leading-relaxed mb-2">
+                Pharmaceutical integrity.<br />
+                Clinical precision.<br />
+                Visible results.
+              </p>
+              <p className="text-bronze font-medium italic mt-4">
+                We don't create cosmetics.<br />
+                We engineer therapeutic skin and hair solutions.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
@@ -104,7 +117,7 @@ const About = () => {
       <section className="section-padding bg-muted/50">
         <div className="container-wide">
           <SectionHeading
-            title="Our Values"
+            title="Our Core Pillars"
             subtitle="The principles that guide everything we do"
           />
 
@@ -120,8 +133,8 @@ const About = () => {
                   viewport={{ once: true }}
                   className="bg-background rounded-xl p-6 border border-border text-center"
                 >
-                  <div className="w-14 h-14 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
-                    <Icon className="w-7 h-7 text-accent-foreground" />
+                  <div className="w-14 h-14 rounded-full bg-bronze/10 flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-7 h-7 text-bronze" />
                   </div>
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                     {value.title}
@@ -168,7 +181,7 @@ const About = () => {
                 <div className="text-4xl md:text-5xl font-serif font-bold text-foreground mb-2">
                   Advanced
                 </div>
-                <p className="text-muted-foreground">Transdermic Technology</p>
+                <p className="text-muted-foreground">NDDS Technology</p>
               </div>
             </div>
           </motion.div>
