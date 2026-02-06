@@ -1,14 +1,15 @@
 // Product data for EPIOLE TRANSDERMIC
 
-import accuzenImg from "@/assets/products/accuzen.jpg";
+import accuzenImg from "@/assets/products/ACCUZEN.png";
+import clarinexForteImg from "@/assets/products/CLARINEX FORTE.png";
+import clarinexGlowImg from "@/assets/products/CLARINEX GLOW.png";
+import clarinexTxImg from "@/assets/products/CLARINEX TX.png";
 import dewnixImg from "@/assets/products/dewnix.png";
-import clarinexGlowImg from "@/assets/products/clarinex-glow.jpg";
-import clarinexTxImg from "@/assets/products/clarinex-tx.jpg";
-import clarinexForteImg from "@/assets/products/clarinex-forte.jpg";
-import heliozenImg from "@/assets/products/heliozen.jpg";
-import dewnixHydraImg from "@/assets/products/dewnix-hydra.jpg";
-import dewnixSrImg from "@/assets/products/dewnix-sr.png";
+import dewnixHydraImg from "@/assets/products/DEWNIX HYDRA.png";
 import dewnixElixiaImg from "@/assets/products/dewnix-elixia.png";
+import dewnixSrImg from "@/assets/products/dewnix-sr.png";
+import heliozenImg from "@/assets/products/heliozen.png";
+
 
 export interface Product {
   id: string;
