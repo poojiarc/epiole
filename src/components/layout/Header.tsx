@@ -23,11 +23,11 @@ const Header = () => {
       <div className="container-wide">
         <div className="flex items-center justify-between h-16 md:h-20">
        <Link to="/" className="flex items-center">
-  <div className="w-32 md:w-56 lg:w-40 flex items-center overflow-hidden">
+  <div className="w-32 md:w-56 lg:w-40 flex items-center">
     <img
       src={logo}
       alt="Epiole Transdermic Logo"
-      className="w-full object-contain -mb-6 md:mb-0"
+      className="w-full object-contain block"
     />
   </div>
 </Link>
